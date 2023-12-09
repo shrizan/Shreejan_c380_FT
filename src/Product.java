@@ -1,6 +1,6 @@
 public class Product extends Binary {
-    public Product(int value, ArithmeticExp left, ArithmeticExp right) {
-        super(value, left, right);
+    public Product(ArithmeticExp left, ArithmeticExp right) {
+        super(left, right);
     }
 
     @Override

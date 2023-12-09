@@ -1,6 +1,6 @@
 public class Sum extends Binary{
-    public Sum(int value, ArithmeticExp left, ArithmeticExp right) {
-        super(value, left, right);
+    public Sum(ArithmeticExp left, ArithmeticExp right) {
+        super(left, right);
     }
 
     @Override
