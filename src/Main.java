@@ -9,5 +9,8 @@ public class Main {
 
         ArithmeticExp sum = new Sum(number, product);
         System.out.println(sum + " = " + sum.evaluate());
+
+        ArithmeticExp modulo = new Modulo(new Number(3), new Number(2));
+        System.out.println(modulo + " = " + modulo.evaluate());
     }
 }
