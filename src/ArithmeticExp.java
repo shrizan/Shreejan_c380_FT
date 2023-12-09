@@ -1,17 +1,11 @@
 public abstract class ArithmeticExp {
-    private ArithmeticExp exp;
     private int value;
 
-    public ArithmeticExp(ArithmeticExp exp, int value) {
-        this.exp = exp;
+    public ArithmeticExp(int value) {
         this.value = value;
     }
 
     abstract public int evaluate();
-
-    public ArithmeticExp getExp() {
-        return exp;
-    }
 
     public int getValue() {
         return value;

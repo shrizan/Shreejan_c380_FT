@@ -2,11 +2,10 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Number number = new Number(null,3);
-        Binary binary= new Product(null,0,new Number(null,2),new Number(null,5));
-        System.out.println(binary.evaluate());
+        ArithmeticExp number = new Number(3);
+        ArithmeticExp product = new Product(0, new Number(2), new Number(5));
 
-        Sum sum = new Sum(null,0,number,binary);
-        System.out.println(sum.evaluate());
+        ArithmeticExp sum = new Sum(0, number, product);
+        System.out.println(sum + " = " + sum.evaluate());
     }
 }
